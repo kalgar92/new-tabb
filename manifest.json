@@ -1,0 +1,30 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+
+  "name": "SickNotes - Notes : but sick!",
+  "short_name": "SickNotes",
+  "description": "Notes : but sick!",
+  "version": "0.0.1",
+  "content_security_policy": "scri  pt-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "SickNotes"
+  },
+
+  "chrome_url_overrides" : {
+    "newtab": "sick-notes.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
