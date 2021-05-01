@@ -129,6 +129,7 @@ h1 {
 h2 {
     font-family: 'Frank Ruhl Libre', serif; 
     font-weight: 400;
+    font-size: 2rem;
 }
 
 blockquote {
@@ -161,8 +162,8 @@ blockquote {
 }
 .content {
     float: left;
-    height: 100%;
-    width: 70%;
+    height: calc(100% - 200px);
+    width: calc(100% - 200px);
     margin-left: 200px;
     display: block;
     padding: 3rem;
@@ -234,6 +235,17 @@ blockquote {
     padding-right:3rem;
     font-size: 0.8rem;
     color: #585858;
+}
+/**
+*   Toggle sidebar
+*/
+.toggle {
+    color: #666;
+    font-size: 2rem;
+    padding: 10px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 99999;
 }
 
 

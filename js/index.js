@@ -5,13 +5,49 @@ jQuery(function() {
         autofocus: true,
         autosave: {
             enabled: true,
-            uniqueId: "MyUniqueID",
+            uniqueId: "notes-textarea",
             delay: 1000,
         },
         spellChecker: false,
         status: false,
         toolbar: ["bold", "italic", "link", "ordered-list", "unordered-list", "|", "heading-1", "heading-2", "heading-3", "|", "image", "table"]
     });
+
+    var simplemde = new SimpleMDE({ 
+        element: document.getElementById("notes-textarea-prios"),
+        autofocus: true,
+        autosave: {
+            enabled: true,
+            uniqueId: "notes-textarea-prios",
+            delay: 1000,
+        },
+        spellChecker: false,
+        status: false,
+        toolbar: ["ordered-list"]
+    });
+
+    var simplemde = new SimpleMDE({ 
+        element: document.getElementById("notes-textarea-liens"),
+        autofocus: true,
+        autosave: {
+            enabled: true,
+            uniqueId: "notes-textarea-liens",
+            delay: 1000,
+        },
+        spellChecker: false,
+        status: false,
+        toolbar: ["link", "unordered-list"]
+    });
+
+
+    // Toggle sidebar 
+    $(".toggle").click(function(){
+
+      
+
+    });
+
+
 
     var quotes = [
         "Act as if what you do makes a difference. It does.",

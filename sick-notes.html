@@ -7,6 +7,8 @@
     <link href="css/index.css" rel="stylesheet" type="text/css" />
     <link href="css/fa.min.css" rel="stylesheet" type="text/css" />
     <link href="css/smde.css" rel="stylesheet" type="text/css" />
+    <link href="css/hacks.css" rel="stylesheet" type="text/css" />
+    <link href="css/bs.grid.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -16,9 +18,12 @@
       <h2 class="date"></h2>
     </div>
 
+    <div class="toggle">
+        <i class="fas fa-toggle-on"></i>
+    </div>
 
     <section class="sidebar">
-            
+       
       <!-- <section class="user">
           <span class="user--karma">1337 ✨</span>
       </section> -->
@@ -137,9 +142,28 @@
   </section>
 
   <section class="content">
+
       <section class="home" data-active="true">
-        <textarea id="notes-textarea" id="" cols="30" rows="10">aaaa</textarea>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Prios de la journée</h2>
+                <textarea id="notes-textarea-prios" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="col-md-4">
+                <h2></h2>
+                <h2>Liens utiles</h2>
+                <textarea id="notes-textarea-liens" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="col-md-4">
+                <h2>Notes</h2>
+                <textarea id="notes-textarea" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        
       </section>
+
       <section class="ui" data-active="false">
           <h1>H1</h1>
           <h2>H2</h2>
